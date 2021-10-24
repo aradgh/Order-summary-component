@@ -1,13 +1,39 @@
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+}
 body {
   background-image: url("./images/pattern-background-desktop.svg");
   background-repeat: repeat-x;
-  background-color: hsl(225, 100%, 98%);
+  background-color: hsl(225, 100%, 94%);
 }
 
+#root {
+  display: grid;
+  place-items: center;
+}
 .App {
   text-align: center;
+  height: 80%;
+  width: 450px;
+  background-color: white;
+  border-radius: 20px;
 }
 
+img {
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+}
+
+h1 {
+  color: hsl(223, 47%, 23%);
+}
+p {
+  margin: 0 15% 0 15%;
+  color: hsl(224, 23%, 55%);
+}
 @media screen and (max-width: 375px) {
   body {
     background-image: url("./images/pattern-background-mobile.svg");
